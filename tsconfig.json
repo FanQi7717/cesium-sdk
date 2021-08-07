@@ -14,6 +14,6 @@
     "esModuleInterop": true, //未导入内容创建空间命名，实现commonjs和es模块的互操作性
     "moduleResolution": "node", //模块解析策略：node/classic
   },
-  "include": ["./src/**/*"], //指定编译的路径，支持文件夹、通配符等
+  "include": ["./src/**/*","./test/**/*"], //指定编译的路径，支持文件夹、通配符等
   "exclude": ["node_modules"], //要排除的，不编译的文件，规则同include
 }
