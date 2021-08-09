@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.cesium-widget-credits,
+.cesium-viewer-zoomIndicatorContainer,
+.cesium-viewer-navigationContainer,
+.cesium-viewer-bottom {
+  display: none !important;
+}
+
+#map {
+  margin-left: 140px;
+  width: calc(100% - 140px);
+  height: 100vh;
+}
+body,
+.cesium-widget,
+.cesium-widget canvas {
+  width: 100%;
+  height: 100vh;
+}
+.cesium-widget canvas {
+  /* 兼容移动端操作 */
+  touch-action: none;
+}
+.cesium-widget {
+  overflow: hidden;
+}
+
+#root {
+  position: fixed;
+  z-index: 10;
+}
