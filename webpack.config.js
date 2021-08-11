@@ -19,11 +19,7 @@ module.exports = {
           "babel-loader",
           {
             loader: "ts-loader",
-            options: {
-              // 关闭类型检查，只进行转译。
-              // 类型检查交给fork-ts-checker-webpack-plugin在别的线程中做。
-              transpileOnly: true,
-            },
+            // 生产环境，可以选择保留声明文件，不设置transpileOnly
           },
         ],
       },
