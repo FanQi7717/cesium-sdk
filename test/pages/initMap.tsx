@@ -1,5 +1,5 @@
 import React, { memo, useEffect, useRef, useState } from "react";
-import { Map } from "../../src/index";
+import { Map } from "../../index";
 
 interface IProps {
   info: string;
