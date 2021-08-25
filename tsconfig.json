@@ -6,7 +6,7 @@
     "noImplicitAny": true, // 没有为值设置明确的类型时，设为false：编译器会默认认为值为any，设为true：报错
     "module": "es6",  //编译后的js要使用的模块标准
     "declaration": true, // 是否生成 .d.ts声明文件
-    "declarationDir": "./dist/types/", // 声明文件打包的位置
+    "declarationDir": "./", // 声明文件打包的位置
     "target": "es5",  //编译后的js应遵循的js版本
     "jsx": "react",   //使用前不许转换，输出文件扩展名.js
     "allowJs": true,  //是否允许编译js文件

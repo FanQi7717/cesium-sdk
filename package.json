@@ -1,7 +1,7 @@
 {
   "name": "cesium-sdk",
-  "version": "1.0.0",
-  "description": "基于cesium的sdk封装1.0.0",
+  "version": "1.0.1",
+  "description": "基于cesium的sdk封装",
   "main": "./dist/cesium-sdk.min.js",
   "types": "./dist/types/index.d.ts",
   "files": [
