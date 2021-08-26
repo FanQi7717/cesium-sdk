@@ -8,6 +8,13 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"), //输出目录对应绝对路径;  '/dist'
     filename: "cesium-sdk.min.js", //决定bundle输出名称
+    library: {
+      type: "module", //同output.libraryTarget, 配置如何暴露library（影响打包文件的导出方式：变量/对象/模块）
+    },
+    // umdNamedDefine: true, //当library.type为'umd'时，umdNamedDefine为true，将命名由umd构建的amd模块
+  },
+  experiments: {
+    outputModule: true,
   },
   module: {
     //创建模块时，匹配请求的规则数组。
