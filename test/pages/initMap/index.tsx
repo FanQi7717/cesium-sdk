@@ -1,11 +1,9 @@
 import React, { memo, useEffect, useRef, useState } from "react";
-import { Map } from "../../index";
+import { Map } from "../../../index";
 
-interface IProps {
-  info: string;
-}
+interface IProps {}
 
-export default function Init({ info }: IProps) {
+export default function Init({}: IProps) {
   const [data, setData] = useState("welcome!");
 
   const map = useRef(null);
@@ -20,9 +18,7 @@ export default function Init({ info }: IProps) {
 
   return (
     <>
-      <div>
-        {data} Init组件。info come from {info}
-      </div>
+      <div>{data} Init组件。</div>
     </>
   );
 }
