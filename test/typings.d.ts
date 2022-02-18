@@ -1,9 +1,10 @@
-export {};
+import * as C from "@hangkan/cesium";
+
 declare global {
-  const Cesium: any;
-  const map: any;
+  const Cesium: typeof C;
+  // const map: any;
   interface Window {
-    Cesium: any;
-    map: any;
+    Cesium: typeof C;
+    // map: any;
   }
 }
