@@ -18,3 +18,16 @@ export function getGeoserverUrl(params: {
     .map((k) => `${k}=${obj[k]}`)
     .join("&");
 }
+
+export const initView = {
+  destination: {
+    x: -2784953.3276149537,
+    y: 4892053.690628419,
+    z: 3185276.127536274,
+  },
+  orientation: {
+    heading: 6.2468124952683795,
+    roll: 0,
+    pitch: -1.5665013172694056,
+  },
+};
